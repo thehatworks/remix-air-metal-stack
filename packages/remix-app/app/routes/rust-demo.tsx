@@ -44,7 +44,7 @@ export default function RustDemo() {
           className="m-2 m-auto h-12 w-full cursor-default rounded-md py-2 px-8 text-center font-sans text-2xl
 font-black uppercase tracking-wide  text-white"
         >
-          Rust Calculator
+          Rust Calculator (le fork)
         </h2>
         <div className="mt-2 mb-4 flex w-full justify-between">
           <input

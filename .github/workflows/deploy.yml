@@ -19,7 +19,7 @@ jobs:
       - name: 🐑 Clone Git Repo
         uses: actions/checkout@v3
 
-      - name: 🦀 Setup Node
+      - name: 🛠️ Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 16
@@ -37,7 +37,7 @@ jobs:
       - name: 🔬 Lint
         run: npm run lint
 
-      - name: Install wasm-ack
+      - name: 🦀 Install wasm-pack
         uses: jetli/wasm-pack-action@v0.3.0
 
       - name: 💿 Remix Build
@@ -70,6 +70,6 @@ jobs:
       - name: 🚛 Ship It
         uses: denoland/deployctl@v1
         with:
-          project: "remix-air-metal-stack"
+          project: "thehatworks-remix-am-stack"
           entrypoint: "./build/index.js" 
           root: "./deno"
